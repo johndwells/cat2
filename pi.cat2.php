@@ -173,7 +173,8 @@ class Cat2 {
 			{
 				$this->EE->db->where('group_id', $this->category_group);
 			}
-			if ($results = $this->EE->db->get()) 
+			$results = $this->EE->db->get();
+			if ($results->num_rows() > 0) 
 			{
 				$this->EE->session->cache[__CLASS__][$col][$value] = $results->row($col);
 			}
