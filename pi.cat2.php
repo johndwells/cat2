@@ -2,9 +2,9 @@
 
 $plugin_info = array(
   'pi_name' => 'Cat2',
-  'pi_version' =>'1.1.0',
-  'pi_author' =>'Mark Croxton',
-  'pi_author_url' => 'http://www.hallmark-design.co.uk/',
+  'pi_version' =>'1.1.1',
+  'pi_author' =>'Mark Croxton (JDW Fork)',
+  'pi_author_url' => 'https://github.com/johndwells/cat2',
   'pi_description' => 'Convert between category name, category id and category url title',
   'pi_usage' => Cat2::usage()
   );
