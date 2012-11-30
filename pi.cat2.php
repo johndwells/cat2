@@ -171,7 +171,7 @@ class Cat2 {
 			
 			if ( ! empty($this->category_group))
 			{
-				$this->EE->db->where('group_id', $this->category_group);
+				$this->EE->db->where_in('group_id', explode(',', $this->category_group));
 			}
 			$results = $this->EE->db->get();
 			if ($results->num_rows() > 0) 
